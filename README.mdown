@@ -1,0 +1,19 @@
+vim-togglecomments ![Project status](http://stillmaintained.com/halcyon/vim-togglecomments.png)
+===============
+
+Installation
+------------
+1. Copy the file `plugin/toggle_comments.vim` to your `~/.vim/plugin` directory
+2. There is no step 2.
+
+
+Usage
+-----
+Press `<F10>` to toggle the comments variable on and off, which changes the
+behavior of the filetype indent plugin
+
+Customization
+-------------
+If you don't want to use the `<F10>` key for mouse toggling, simply remap it to
+another key.  It autodetects whether it has been remapped and won't register
+the `<F10>` key if so.
