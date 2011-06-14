@@ -27,8 +27,8 @@ endfunction
 "
 if !exists("no_plugin_maps") && !exists("no_toggle_comments_maps")
     if !hasmapto('<SID>ToggleComments()')
-        noremap <F10> :call <SID>ToggleComments()<CR>
-        inoremap <F10> <Esc>:call <SID>ToggleComments()<CR>
+        noremap <F8> :call <SID>ToggleComments()<CR>
+        inoremap <F8> <Esc>:call <SID>ToggleComments()<CR>
     endif
 endif
 
