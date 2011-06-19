@@ -11,12 +11,11 @@ endif
 let b:loaded_toggle_comments = 1
 
 fun! s:ToggleComments()
-    if &comments == ""
-        let &comments = s:old_comments
-        echo "Original comments restored (" . &comments . ")"
+    if &fo !~ "o"
+        set fo+=o
+        echo "Comments restored (" . &comments . ")"
     else
-        let s:old_comments = &comments
-        let &comments=""
+        set fo-=o
         echo "Comments Disabled"
     endif
 endfunction
