@@ -13,7 +13,7 @@ let b:loaded_toggle_comments = 1
 fun! s:ToggleComments()
     if &fo !~ "o"
         set fo+=o
-        echo "Comments restored (" . &comments . ")"
+        echo "Comments Enabled: (".&comments.")"
     else
         set fo-=o
         echo "Comments Disabled"
